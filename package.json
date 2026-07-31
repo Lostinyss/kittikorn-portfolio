@@ -10,6 +10,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "preview:local": "node scripts/local-preview.mjs",
+    "export:github": "npm run build && node scripts/export-github-pages.mjs",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
