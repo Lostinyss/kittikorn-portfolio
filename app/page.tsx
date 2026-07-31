@@ -1,5 +1,15 @@
 const projects = [
   {
+    number: "00",
+    title: "Inventory and Asset Management System",
+    type: "ระบบบริหารวัสดุและครุภัณฑ์",
+    summary: "เว็บแอปสำหรับบริหารวัสดุและครุภัณฑ์ที่พัฒนาให้กรมส่งเสริมสหกรณ์ ช่วยให้เจ้าหน้าที่พัสดุทั้งส่วนกลางและส่วนภูมิภาคจัดการ ติดตาม และดูแลทรัพย์สินขององค์กรผ่านระบบส่วนกลางได้อย่างมีประสิทธิภาพ",
+    contribution: "ผลงานในรายวิชา Computer Science Project I — พัฒนาระบบเพื่อรวบรวมขั้นตอนการบริหารวัสดุและครุภัณฑ์ไว้ในแพลตฟอร์มเดียว โดยคำนึงถึงการใช้งานของเจ้าหน้าที่จากหลายพื้นที่ และนำเสนอผลงานในงาน IT Empowering Day 2026",
+    stack: ["Web Application", "Inventory Management", "Asset Tracking", "Centralized Platform"],
+    image: "/projects/inventory-asset-system.png",
+    video: "/projects/inventory-asset-system-demo.mp4",
+  },
+  {
     number: "01",
     title: "Pinminder",
     type: "Desktop Productivity App",
@@ -32,6 +42,19 @@ const projects = [
     video: "/projects/trashtrack-demo.mp4",
     github: "https://github.com/Lostinyss/Trashtrack",
   },
+  {
+    number: "04",
+    title: "TrashSeeker",
+    type: "AI Waste Monitoring Platform",
+    summary: "เว็บแอปสำหรับจัดการสถานที่ กล้อง และสมาชิก พร้อมติดตามสถานะขยะจากภาพหรือ URL ของกล้อง โดยนำ TrashTrack API และโมเดล AI มาต่อยอดเป็นระบบบริหารจัดการผ่านเว็บ",
+    contribution: "Solo Project — ออกแบบและพัฒนา Dashboard, ระบบเพิ่ม แก้ไข ลบ และค้นหา Place กับ Camera, ระบบสมาชิก, การสแกนรายกล้องและทุกกล้อง รวมถึงสถานะพบ ไม่พบ และ Error โดยใช้ AI ช่วยวางแนวทาง แก้ Debug และปรับปรุงการพัฒนา",
+    stack: ["Next.js", "TypeScript", "FastAPI", "YOLO AI", "GitHub Pages", "AI-assisted"],
+    image: "/projects/trashseeker-1.png",
+    images: ["/projects/trashseeker-2.png", "/projects/trashseeker-3.png"],
+    video: "/projects/trashseeker-demo.mp4",
+    github: "https://github.com/Lostinyss/trash-seeker",
+    live: "https://lostinyss.github.io/trash-seeker/",
+  },
 ];
 
 const certificates = [
@@ -48,7 +71,7 @@ export default function Home() {
       <nav className="nav" aria-label="เมนูหลัก">
         <a className="logo" href="#top" aria-label="กลับหน้าหลัก">KM<span>.</span></a>
         <div className="nav-links">
-          <a href="#about">ประวัติ</a><a href="#projects">ผลงาน</a><a href="#skills">ทักษะ</a><a href="#certificates">ใบรับรอง</a>
+          <a href="#about">ประวัติ</a><a href="#projects">ผลงาน</a><a href="#skills">ทักษะ</a><a href="#activities">กิจกรรม</a><a href="#certificates">ใบรับรอง</a>
         </div>
         <a className="mini-cta" href="mailto:Imator92@gmail.com">ติดต่อ <Arrow /></a>
       </nav>
@@ -89,20 +112,21 @@ export default function Home() {
       <section className="projects section" id="projects">
         <div className="section-heading">
           <div><span className="eyebrow">PROJECT SHOWCASE</span><h2 className="single-line-heading">ผลงานที่ผ่านมา</h2></div>
-          <p>3 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, API Integration และการประยุกต์ใช้ AI</p>
+          <p>5 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, ระบบบริหารจัดการ, API Integration และการประยุกต์ใช้ AI</p>
         </div>
         <div className="project-list">
           {projects.map((project) => (
             <article className="project" key={project.number}>
               <div className="project-media">
                 <img src={project.image} alt={`ภาพตัวอย่าง Project ${project.title}`} />
+                {project.images && <div className="project-gallery">{project.images.map((image) => <img src={image} alt={`ภาพเพิ่มเติมของ ${project.title}`} key={image} />)}</div>}
                 <video controls preload="metadata" poster={project.image} aria-label={`วิดีโอสาธิต ${project.title}`}><source src={project.video} type="video/mp4" /></video>
               </div>
               <div className="project-info">
-                <div className="project-meta"><span className="project-number">{project.number} / 03</span><span className="project-type">{project.type}</span></div>
+                <div className="project-meta"><span className="project-number">{project.number} / 04</span><span className="project-type">{project.type}</span></div>
                 <h3>{project.title}</h3><p>{project.summary}</p><h4>ส่วนที่รับผิดชอบ</h4><p>{project.contribution}</p>
                 <div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <a className="project-link" href={project.github} target="_blank" rel="noreferrer">ดู Source Code บน GitHub <Arrow /></a>
+                <div className="project-actions">{project.github && <a className="project-link" href={project.github} target="_blank" rel="noreferrer">ดู Source Code บน GitHub <Arrow /></a>}{project.live && <a className="project-link" href={project.live} target="_blank" rel="noreferrer">ทดลองเว็บไซต์ Live <Arrow /></a>}{!project.github && <span className="project-note">ผลงานนี้ไม่มี Public Repository</span>}</div>
               </div>
             </article>
           ))}
@@ -120,6 +144,17 @@ export default function Home() {
           <article><span>03</span><h3>Data & AI</h3><p>YOLO Object Detection, REST API, พื้นฐาน SQL และ Local Storage</p></article>
           <article><span>04</span><h3>เครื่องมือ</h3><p>Git, GitHub, VS Code, npm, พื้นฐาน Figma และ Responsive Design</p></article>
         </div>
+      </section>
+
+      <section className="activities section" id="activities">
+        <div className="section-heading">
+          <div><span className="eyebrow">ACTIVITIES</span><h2 className="single-line-heading">กิจกรรมที่ผ่านมา</h2></div>
+          <p>ประสบการณ์นำเสนอผลงาน แลกเปลี่ยนความรู้ และเตรียมความพร้อมสู่การทำงานด้านเทคโนโลยี</p>
+        </div>
+        <article className="activity-card">
+          <div className="activity-image"><img src="/activities/it-empowering-day-2026.jpg" alt="กิตติกร มานิมนต์ นำเสนอระบบ Inventory and Asset Management System ในงาน IT Empowering Day 2026" /></div>
+          <div className="activity-info"><span>2026 · มหาวิทยาลัยกรุงเทพ</span><h3>IT Empowering Day 2026: In the Era of AI & Mini Job Fair</h3><p>นำเสนอ <strong>Inventory and Asset Management System</strong> ซึ่งพัฒนาขึ้นในรายวิชา Computer Science Project I ภายในงาน IT Empowering Day 2026: In the Era of AI & Mini Job Fair ที่จัดโดยคณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ</p></div>
+        </article>
       </section>
 
       <section className="certificates section" id="certificates">

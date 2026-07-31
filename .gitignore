@@ -51,4 +51,5 @@ next-env.d.ts
 # Local source material (optimized copies live in public/)
 /certificate/
 /project-preview/
+/activities/
 /projects/
