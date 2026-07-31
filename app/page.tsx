@@ -84,7 +84,6 @@ export default function Home() {
           <a className="button button-dark" href="#projects">ชมผลงาน <span>↓</span></a>
           <a className="text-link" href="#about">รู้จักผมเพิ่มเติม <Arrow /></a>
         </div>
-        <div className="hero-sticker" aria-hidden="true"><span>BUILD</span><b>+</b><span>LEARN</span></div>
       </section>
 
       <section className="marquee" aria-label="ทักษะทางเทคนิค"><div>JAVASCRIPT <span>✦</span> NEXT.JS <span>✦</span> PYTHON <span>✦</span> PHP <span>✦</span> GDSCRIPT <span>✦</span> LUA <span>✦</span> FASTAPI <span>✦</span> LARAVEL <span>✦</span> HTML & CSS <span>✦</span> YOLO AI <span>✦</span></div></section>
