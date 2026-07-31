@@ -19,12 +19,13 @@ test("server-renders the completed portfolio", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Kittikorn Manimon — Web Developer<\/title>/);
+  assert.match(html, /<title>กิตติกร มานิมนต์ — Portfolio<\/title>/);
   assert.match(html, /Pinminder/);
   assert.match(html, /Pak Chong Pocket/);
   assert.match(html, /TrashTrack/);
   assert.match(html, /TECHNICAL SKILLS/);
-  assert.match(html, /CERTIFICATIONS/);
+  assert.match(html, /CERTIFICATES/);
+  assert.match(html, /ผลงาน<br\/>ที่ผ่านมา/);
   assert.match(html, /github\.com\/Lostinyss/);
   assert.doesNotMatch(html, /download[^>]*resume|download[^>]*transcript/i);
 });
