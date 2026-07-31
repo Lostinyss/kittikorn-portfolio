@@ -64,7 +64,7 @@ export default function Home() {
         <div className="hero-sticker" aria-hidden="true"><span>BUILD</span><b>+</b><span>LEARN</span></div>
       </section>
 
-      <section className="marquee" aria-label="ทักษะทางเทคนิค"><div>JAVASCRIPT <span>✦</span> NEXT.JS <span>✦</span> PYTHON <span>✦</span> FASTAPI <span>✦</span> LARAVEL <span>✦</span> HTML & CSS <span>✦</span> YOLO AI <span>✦</span></div></section>
+      <section className="marquee" aria-label="ทักษะทางเทคนิค"><div>JAVASCRIPT <span>✦</span> NEXT.JS <span>✦</span> PYTHON <span>✦</span> PHP <span>✦</span> GDSCRIPT <span>✦</span> LUA <span>✦</span> FASTAPI <span>✦</span> LARAVEL <span>✦</span> HTML & CSS <span>✦</span> YOLO AI <span>✦</span></div></section>
 
       <section className="about section" id="about">
         <div className="about-title">
@@ -115,7 +115,7 @@ export default function Home() {
           <p>ทักษะที่ได้ใช้จริงจากงานในรายวิชาและ Personal Project พร้อมเรียนรู้และพัฒนาเพิ่มเติมผ่านการลงมือทำ</p>
         </div>
         <div className="skill-grid">
-          <article><span>01</span><h3>ภาษาโปรแกรม</h3><p>JavaScript, TypeScript, Python, HTML, CSS, PHP</p></article>
+          <article><span>01</span><h3>ภาษาโปรแกรม</h3><p>JavaScript, TypeScript, Python, PHP, GDScript, Lua, HTML และ CSS</p></article>
           <article><span>02</span><h3>Framework</h3><p>Next.js, React, Laravel, FastAPI, PySide6</p></article>
           <article><span>03</span><h3>Data & AI</h3><p>YOLO Object Detection, REST API, พื้นฐาน SQL และ Local Storage</p></article>
           <article><span>04</span><h3>เครื่องมือ</h3><p>Git, GitHub, VS Code, npm, พื้นฐาน Figma และ Responsive Design</p></article>
