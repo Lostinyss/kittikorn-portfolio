@@ -25,7 +25,8 @@ test("server-renders the completed portfolio", async () => {
   assert.match(html, /TrashTrack/);
   assert.match(html, /TECHNICAL SKILLS/);
   assert.match(html, /CERTIFICATES/);
-  assert.match(html, /ผลงาน<br\/>ที่ผ่านมา/);
+  assert.match(html, /ผลงานที่ผ่านมา/);
+  assert.match(html, /มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต/);
   assert.match(html, /github\.com\/Lostinyss/);
   assert.doesNotMatch(html, /download[^>]*resume|download[^>]*transcript/i);
 });

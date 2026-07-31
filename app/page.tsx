@@ -54,9 +54,9 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-kicker"><span className="status-dot" /> พร้อมเปิดรับโอกาสและเรียนรู้สิ่งใหม่</div>
-        <h1>เปลี่ยนไอเดีย<br /><span>ให้เป็นผลงานจริง</span></h1>
-        <p className="hero-copy">สวัสดีครับ ผมกิตติกร มานิมนต์ นักศึกษา Computer Science จากปากช่อง สนุกกับการเรียนรู้ผ่านการลงมือสร้าง Software และพัฒนาไอเดียให้กลายเป็น Project ที่ใช้งานได้จริง</p>
+        <div className="hero-kicker"><span className="status-dot" /> ยินดีต้อนรับสู่ Portfolio ของผม</div>
+        <h1>ยินดีต้อนรับ<br /><span>สู่ Portfolio</span></h1>
+        <p className="hero-copy">สวัสดีครับ ผมกิตติกร มานิมนต์ นักศึกษา Computer Science ที่มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต สนุกกับการเรียนรู้ผ่านการลงมือสร้าง Software และพัฒนาไอเดียให้กลายเป็น Project ที่ใช้งานได้จริง</p>
         <div className="hero-actions">
           <a className="button button-dark" href="#projects">ชมผลงาน <span>↓</span></a>
           <a className="text-link" href="#about">รู้จักผมเพิ่มเติม <Arrow /></a>
@@ -78,7 +78,7 @@ export default function Home() {
           <p>จุดแข็งของผมคือการเรียนรู้ Tool ใหม่ด้วยตนเองและปรับตัวเมื่อ Project เปลี่ยนแปลง ผมใช้ทุก Project เป็นโอกาสฝึกวางแผน สื่อสาร และพัฒนางานจาก Feedback</p>
           <div className="facts">
             <div><span>ที่อยู่</span><b>ปากช่อง, นครราชสีมา, ประเทศไทย</b></div>
-            <div><span>การศึกษา</span><b>มหาวิทยาลัยกรุงเทพ</b></div>
+            <div><span>การศึกษา</span><b>มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต</b></div>
             <div><span>หลักสูตร</span><b>เทคโนโลยีสารสนเทศและนวัตกรรม — Computer Science</b></div>
             <div><span>ผลการเรียน</span><b>กำลังขึ้นชั้นปีที่ 4 · GPA ปัจจุบัน 3.53</b></div>
             <div><span>ความสนใจ</span><b>Web Development · Game Development · AI</b></div>
@@ -88,7 +88,7 @@ export default function Home() {
 
       <section className="projects section" id="projects">
         <div className="section-heading">
-          <div><span className="eyebrow">PROJECT SHOWCASE</span><h2>ผลงาน<br />ที่ผ่านมา</h2></div>
+          <div><span className="eyebrow">PROJECT SHOWCASE</span><h2 className="single-line-heading">ผลงานที่ผ่านมา</h2></div>
           <p>3 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, API Integration และการประยุกต์ใช้ AI</p>
         </div>
         <div className="project-list">
@@ -124,7 +124,7 @@ export default function Home() {
 
       <section className="certificates section" id="certificates">
         <div className="section-heading">
-          <div><span className="eyebrow">CERTIFICATES</span><h2>การเรียนรู้<br />นอกห้องเรียน</h2></div>
+          <div><span className="eyebrow">CERTIFICATES</span><h2 className="single-line-heading">การเรียนรู้นอกห้องเรียน</h2></div>
           <p>การอบรมเพิ่มเติมด้าน Cybersecurity, AI-assisted Development และการใช้ AI อย่างมีความรับผิดชอบ</p>
         </div>
         <div className="certificate-grid">
