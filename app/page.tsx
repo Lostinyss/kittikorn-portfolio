@@ -79,7 +79,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-kicker"><span className="status-dot" /> ยินดีต้อนรับสู่ Portfolio ของผม</div>
         <h1>ยินดีต้อนรับ<br /><span>สู่ Portfolio</span></h1>
-        <p className="hero-copy">สวัสดีครับ ผมกิตติกร มานิมนต์ นักศึกษา Computer Science ที่มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต สนุกกับการเรียนรู้ผ่านการลงมือสร้าง Software และพัฒนาไอเดียให้กลายเป็น Project ที่ใช้งานได้จริง</p>
+        <p className="hero-copy">นักศึกษาวิทยาการคอมพิวเตอร์ที่มีเป้าหมายทำงานในตำแหน่ง Backend Developer มีประสบการณ์พัฒนาระบบด้วย Laravel/PHP, FastAPI/Python และจัดการฐานข้อมูล SQL/Oracle ถนัดด้านการพัฒนาและเชื่อมต่อ API การออกแบบฐานข้อมูล และการแก้ปัญหา พร้อมเรียนรู้เทคโนโลยีใหม่เพื่อสร้างระบบที่มีประสิทธิภาพและดูแลรักษาได้ง่าย</p>
         <div className="hero-actions">
           <a className="button button-dark" href="#projects">ชมผลงาน <span>↓</span></a>
           <a className="text-link" href="#about">รู้จักผมเพิ่มเติม <Arrow /></a>
