@@ -33,20 +33,9 @@ const projects = [
   },
   {
     number: "03",
-    title: "TrashTrack",
-    type: "AI Waste Detection",
-    summary: "Web Demo สำหรับตรวจจับขยะจากรูปภาพด้วย AI และแสดงผลลัพธ์ให้ผู้ใช้ตรวจสอบผ่าน Browser ได้อย่างชัดเจน",
-    contribution: "Team Project — รับผิดชอบด้านการเขียนโปรแกรมและออกแบบ Interface แนวคิดช่วยลดการเดินตรวจพื้นที่ โดยผู้ดูแลสามารถเปิดมือถือหรือเว็บเพื่อตรวจสอบสภาพขยะจากระยะไกล ใช้ YOLO AI Model เป็นหัวใจของระบบตรวจจับ",
-    stack: ["Python", "YOLO AI", "FastAPI", "Next.js"],
-    image: "/projects/trashtrack.png",
-    video: "/projects/trashtrack-demo.mp4",
-    github: "https://github.com/Lostinyss/Trashtrack",
-  },
-  {
-    number: "04",
     title: "TrashSeeker",
     type: "AI Waste Monitoring Platform",
-    summary: "เว็บแอปสำหรับจัดการสถานที่ กล้อง และสมาชิก พร้อมติดตามสถานะขยะจากภาพหรือ URL ของกล้อง โดยนำ TrashTrack API และโมเดล AI มาต่อยอดเป็นระบบบริหารจัดการผ่านเว็บ",
+    summary: "เว็บแอปสำหรับจัดการสถานที่ กล้อง และสมาชิก พร้อมติดตามสถานะขยะจากภาพหรือ URL ของกล้อง โดยนำ API ตรวจจับขยะและโมเดล AI มาต่อยอดเป็นระบบบริหารจัดการผ่านเว็บ",
     contribution: "Solo Project — ออกแบบและพัฒนา Dashboard, ระบบเพิ่ม แก้ไข ลบ และค้นหา Place กับ Camera, ระบบสมาชิก, การสแกนรายกล้องและทุกกล้อง รวมถึงสถานะพบ ไม่พบ และ Error โดยใช้ AI ช่วยวางแนวทาง แก้ Debug และปรับปรุงการพัฒนา",
     stack: ["Next.js", "TypeScript", "FastAPI", "YOLO AI", "GitHub Pages", "AI-assisted"],
     image: "/projects/trashseeker-1.png",
@@ -56,7 +45,7 @@ const projects = [
     live: "https://lostinyss.github.io/trash-seeker/",
   },
   {
-    number: "05",
+    number: "04",
     title: "HunterRoams",
     type: "Pixel-art Browser Game",
     summary: "HunterRoams เป็นเกมพิกเซลอาร์ตบนเว็บ ผู้เล่นสำรวจพื้นที่ล่าในมุมมองจากด้านบนและต่อสู้กับมอนสเตอร์ในมุมมองด้านข้าง ระหว่างการล่าสามารถกลับบ้านเพื่อพัก กินอาหาร และเก็บวัสดุที่รวบรวมมาได้",
@@ -121,7 +110,7 @@ export default function Home() {
       <section className="projects section" id="projects">
         <div className="section-heading">
           <div><span className="eyebrow">PROJECT SHOWCASE</span><h2 className="single-line-heading">ผลงานที่ผ่านมา</h2></div>
-          <p>6 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, ระบบบริหารจัดการ, API Integration, AI และ Game Development</p>
+          <p>5 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, ระบบบริหารจัดการ, API Integration, AI และ Game Development</p>
         </div>
         <div className="project-list">
           {projects.map((project) => (

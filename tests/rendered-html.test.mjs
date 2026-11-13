@@ -22,7 +22,10 @@ test("server-renders the completed portfolio", async () => {
   assert.match(html, /<title>กิตติกร มานิมนต์ — Portfolio<\/title>/);
   assert.match(html, /Pinminder/);
   assert.match(html, /Pak Chong Pocket/);
-  assert.match(html, /TrashTrack/);
+  assert.match(html, /TrashSeeker/);
+  assert.match(html, /HunterRoams/);
+  assert.match(html, /5 Project/);
+  assert.doesNotMatch(html, /TrashTrack/);
   assert.match(html, /TECHNICAL SKILLS/);
   assert.match(html, /CERTIFICATES/);
   assert.match(html, /ผลงานที่ผ่านมา/);
@@ -37,7 +40,8 @@ test("includes responsive project media and certificate previews", async () => {
 
   assert.match(html, /pinminder-demo\.mp4/);
   assert.match(html, /pak-chong-pocket-demo\.mp4/);
-  assert.match(html, /trashtrack-demo\.mp4/);
+  assert.match(html, /hunterroams-hunting-ground\.png/);
+  assert.doesNotMatch(html, /trashtrack-demo\.mp4/);
   assert.match(html, /certificate-1\.png/);
   assert.match(html, /certificate-2\.png/);
   assert.match(html, /certificate-3\.png/);

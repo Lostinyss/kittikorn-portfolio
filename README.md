@@ -4,11 +4,13 @@ Personal portfolio of Kittikorn Manimon, a Computer Science student at
 Bangkok University based in Pak Chong, Thailand.
 
 The website presents my background, technical skills, certifications, and
-three selected projects:
+five selected projects:
 
+- **Inventory and Asset Management System** — a Laravel and Oracle system for managing organizational assets
 - **Pinminder** — a desktop reminder and task-management application
 - **Pak Chong Pocket** — a responsive local travel planner
-- **TrashTrack** — an AI-powered waste-detection web demonstration
+- **TrashSeeker** — a web platform for AI-assisted waste monitoring
+- **HunterRoams** — a pixel-art browser game built with Phaser and Next.js
 
 ## Technology
 
