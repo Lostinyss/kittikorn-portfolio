@@ -55,6 +55,18 @@ const projects = [
     github: "https://github.com/Lostinyss/trash-seeker",
     live: "https://lostinyss.github.io/trash-seeker/",
   },
+  {
+    number: "05",
+    title: "HunterRoams",
+    type: "Pixel-art Browser Game",
+    summary: "HunterRoams is a pixel-art browser game where you explore top-down Hunting Grounds and battle roaming monsters in side-view combat. Return home between hunts to rest, eat, and stash your materials.",
+    contribution: "เกมบนเว็บที่เชื่อมการสำรวจพื้นที่แบบมุมมองจากด้านบนเข้ากับการต่อสู้แบบมุมมองด้านข้าง พร้อมพื้นที่บ้านสำหรับพัก กินอาหาร และเก็บวัสดุที่ได้จากการล่า",
+    stack: ["Phaser", "Next.js", "Pixel Art", "Browser Game"],
+    image: "/projects/hunterroams-hunting-ground.png",
+    images: ["/projects/hunterroams-home.png", "/projects/hunterroams-combat.png"],
+    video: undefined,
+    live: "https://hunter-roams.vercel.app/game",
+  },
 ];
 
 const certificates = [
@@ -110,7 +122,7 @@ export default function Home() {
       <section className="projects section" id="projects">
         <div className="section-heading">
           <div><span className="eyebrow">PROJECT SHOWCASE</span><h2 className="single-line-heading">ผลงานที่ผ่านมา</h2></div>
-          <p>5 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, ระบบบริหารจัดการ, API Integration และการประยุกต์ใช้ AI</p>
+          <p>6 Project ที่แสดงทักษะด้าน Desktop Development, Responsive Web Design, ระบบบริหารจัดการ, API Integration, AI และ Game Development</p>
         </div>
         <div className="project-list">
           {projects.map((project) => (
@@ -118,13 +130,13 @@ export default function Home() {
               <div className="project-media">
                 <img src={project.image} alt={`ภาพตัวอย่าง Project ${project.title}`} />
                 {project.images && <div className="project-gallery">{project.images.map((image) => <img src={image} alt={`ภาพเพิ่มเติมของ ${project.title}`} key={image} />)}</div>}
-                <video controls preload="metadata" poster={project.image} aria-label={`วิดีโอสาธิต ${project.title}`}><source src={project.video} type="video/mp4" /></video>
+                {project.video && <video controls preload="metadata" poster={project.image} aria-label={`วิดีโอสาธิต ${project.title}`}><source src={project.video} type="video/mp4" /></video>}
               </div>
               <div className="project-info">
-                <div className="project-meta"><span className="project-number">{project.number} / 04</span><span className="project-type">{project.type}</span></div>
+                <div className="project-meta"><span className="project-number">{project.number} / {String(projects.length - 1).padStart(2, "0")}</span><span className="project-type">{project.type}</span></div>
                 <h3>{project.title}</h3><p>{project.summary}</p><h4>ส่วนที่รับผิดชอบ</h4><p>{project.contribution}</p>
                 <div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <div className="project-actions">{project.github && <a className="project-link" href={project.github} target="_blank" rel="noreferrer">ดู Source Code บน GitHub <Arrow /></a>}{project.live && <a className="project-link" href={project.live} target="_blank" rel="noreferrer">ทดลองเว็บไซต์ Live <Arrow /></a>}{!project.github && <span className="project-note">ผลงานนี้ไม่มี Public Repository</span>}</div>
+                <div className="project-actions">{project.github && <a className="project-link" href={project.github} target="_blank" rel="noreferrer">ดู Source Code บน GitHub <Arrow /></a>}{project.live && <a className="project-link" href={project.live} target="_blank" rel="noreferrer">ทดลองเว็บไซต์ Live <Arrow /></a>}{!project.github && !project.live && <span className="project-note">ผลงานนี้ไม่มี Public Repository</span>}</div>
               </div>
             </article>
           ))}
