@@ -77,8 +77,8 @@ export default function Home() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-kicker"><span className="status-dot" /> ยินดีต้อนรับสู่ Portfolio ของผม</div>
-        <h1>ยินดีต้อนรับ<br /><span>สู่ Portfolio</span></h1>
+        <div className="hero-kicker">KITTIKORN MANIMON / PORTFOLIO</div>
+        <h1>กิตติกร<br /><span>มานิมนต์</span></h1>
         <p className="hero-copy">นักศึกษาวิทยาการคอมพิวเตอร์ที่มีเป้าหมายทำงานในตำแหน่ง Backend Developer มีประสบการณ์พัฒนาระบบด้วย Laravel/PHP, FastAPI/Python และจัดการฐานข้อมูล SQL/Oracle ถนัดด้านการพัฒนาและเชื่อมต่อ API การออกแบบฐานข้อมูล และการแก้ปัญหา พร้อมเรียนรู้เทคโนโลยีใหม่เพื่อสร้างระบบที่มีประสิทธิภาพและดูแลรักษาได้ง่าย</p>
         <div className="hero-actions">
           <a className="button button-dark" href="#projects">ชมผลงาน <span>↓</span></a>
@@ -86,13 +86,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="marquee" aria-label="ทักษะทางเทคนิค"><div>JAVASCRIPT <span>✦</span> NEXT.JS <span>✦</span> PYTHON <span>✦</span> PHP <span>✦</span> GDSCRIPT <span>✦</span> LUA <span>✦</span> FASTAPI <span>✦</span> LARAVEL <span>✦</span> HTML & CSS <span>✦</span> YOLO AI <span>✦</span></div></section>
 
       <section className="about section" id="about">
         <div className="about-title">
           <span className="eyebrow">ประวัติ</span>
-          <div className="portrait"><img src="/kittikorn-manimon.jpg" alt="กิตติกร มานิมนต์ ที่ปากช่อง" /></div>
-          <h2 className="name-heading">Kie Kittikorn<br /><em>Maimon</em><small>กี้, กิตติกร มานิมนต์</small></h2>
+          <div className="portrait"><img src="/kittikorn-manimon.jpg" alt="ภาพถ่ายกิตติกร มานิมนต์" /></div>
+          <h2 className="name-heading">Kittikorn<br />Manimon<small>กิตติกร มานิมนต์</small></h2>
         </div>
         <div className="about-copy">
           <p>ผมเป็นนักศึกษา <strong>Computer Science ที่กำลังขึ้นชั้นปีที่ 4</strong> ชอบเปลี่ยนไอเดียให้กลายเป็น Software ที่ใช้งานได้จริง</p>
@@ -173,8 +172,8 @@ export default function Home() {
       </section>
 
       <section className="contact section" id="contact">
-        <span className="contact-star" aria-hidden="true">✳</span><span className="eyebrow">ติดต่อผม</span>
-        <h2>พร้อมเรียนรู้<br /><em>พร้อมพัฒนาไปด้วยกัน</em></h2>
+        <span className="eyebrow">ติดต่อ</span>
+        <h2>สนใจร่วมงาน<br />หรือพูดคุยเกี่ยวกับโปรเจกต์</h2>
         <div className="contact-actions">
           <a className="button button-light" href="mailto:Imator92@gmail.com">ส่ง Email <Arrow /></a>
           <a className="button button-outline" href="https://github.com/Lostinyss" target="_blank" rel="noreferrer">GitHub <Arrow /></a>

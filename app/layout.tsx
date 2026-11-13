@@ -7,7 +7,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: "กิตติกร มานิมนต์ — Portfolio",
-  description: "Portfolio ของกิตติกร มานิมนต์ นักศึกษา Computer Science จากปากช่อง ผู้สนใจ Web Development, Game Development และ AI",
+  description: "Portfolio ของกิตติกร มานิมนต์ นักศึกษาวิทยาการคอมพิวเตอร์ที่สนใจงาน Backend Development, API และการออกแบบฐานข้อมูล",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
