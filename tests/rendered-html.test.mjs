@@ -29,6 +29,12 @@ test("server-renders the completed portfolio", async () => {
   assert.match(html, /TECHNICAL SKILLS/);
   assert.match(html, /CERTIFICATES/);
   assert.match(html, /ผลงานที่ผ่านมา/);
+  assert.match(html, /GPA ปัจจุบัน 3\.49/);
+  assert.doesNotMatch(html, /class="hero"|KM<span>/);
+  assert.match(html, /id="contact"/);
+  assert.match(html, /mailto:kittikorn\.dev@gmail\.com/);
+  assert.match(html, /tel:\+66808212143/);
+  assert.doesNotMatch(html, /Imator92@gmail\.com|class="contact section"|<footer>/);
   assert.match(html, /มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต/);
   assert.match(html, /github\.com\/Lostinyss/);
   assert.doesNotMatch(html, /download[^>]*resume|download[^>]*transcript/i);

@@ -69,23 +69,11 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="เมนูหลัก">
-        <a className="logo" href="#top" aria-label="กลับหน้าหลัก">KM<span>.</span></a>
         <div className="nav-links">
           <a href="#about">ประวัติ</a><a href="#projects">ผลงาน</a><a href="#skills">ทักษะ</a><a href="#activities">กิจกรรม</a><a href="#certificates">ใบรับรอง</a>
         </div>
-        <a className="mini-cta" href="mailto:Imator92@gmail.com">ติดต่อ <Arrow /></a>
+        <a className="mini-cta" href="#contact">ติดต่อ <Arrow /></a>
       </nav>
-
-      <section className="hero" id="top">
-        <div className="hero-kicker">KITTIKORN MANIMON / PORTFOLIO</div>
-        <h1>กิตติกร<br /><span>มานิมนต์</span></h1>
-        <p className="hero-copy">นักศึกษาวิทยาการคอมพิวเตอร์ที่มีเป้าหมายทำงานในตำแหน่ง Backend Developer มีประสบการณ์พัฒนาระบบด้วย Laravel/PHP, FastAPI/Python และจัดการฐานข้อมูล SQL/Oracle ถนัดด้านการพัฒนาและเชื่อมต่อ API การออกแบบฐานข้อมูล และการแก้ปัญหา พร้อมเรียนรู้เทคโนโลยีใหม่เพื่อสร้างระบบที่มีประสิทธิภาพและดูแลรักษาได้ง่าย</p>
-        <div className="hero-actions">
-          <a className="button button-dark" href="#projects">ชมผลงาน <span>↓</span></a>
-          <a className="text-link" href="#about">รู้จักผมเพิ่มเติม <Arrow /></a>
-        </div>
-      </section>
-
 
       <section className="about section" id="about">
         <div className="about-title">
@@ -94,15 +82,20 @@ export default function Home() {
           <h2 className="name-heading">Kittikorn<br />Manimon<small>กิตติกร มานิมนต์</small></h2>
         </div>
         <div className="about-copy">
-          <p>ผมเป็นนักศึกษา <strong>Computer Science ที่กำลังขึ้นชั้นปีที่ 4</strong> ชอบเปลี่ยนไอเดียให้กลายเป็น Software ที่ใช้งานได้จริง</p>
-          <p>Web Development ทำให้ผมได้เรียนรู้การสร้าง Product ตั้งแต่การออกแบบ Interface ไปจนถึง Application Logic และ API ปัจจุบันผมสนใจ Game Development มากขึ้น และอยากนำทักษะด้านการแก้ปัญหาไปสร้าง Interactive Experience ที่สนุกและน่าสนใจ</p>
-          <p>จุดแข็งของผมคือการเรียนรู้ Tool ใหม่ด้วยตนเองและปรับตัวเมื่อ Project เปลี่ยนแปลง ผมใช้ทุก Project เป็นโอกาสฝึกวางแผน สื่อสาร และพัฒนางานจาก Feedback</p>
+          <p>ผมเป็นนักศึกษาวิทยาการคอมพิวเตอร์ชั้นปีที่ 4 ที่มหาวิทยาลัยกรุงเทพ สนใจงานพัฒนาเว็บ โดยเฉพาะ <strong>Backend Development และการเชื่อมต่อ API</strong></p>
+          <p>ผมเคยพัฒนาระบบด้วย Laravel/PHP และ FastAPI/Python รวมถึงทำงานกับฐานข้อมูล SQL/Oracle ปัจจุบันกำลังศึกษาการพัฒนาเกมด้วย Phaser และ Next.js</p>
           <div className="facts">
             <div><span>ที่อยู่</span><b>ปากช่อง, นครราชสีมา, ประเทศไทย</b></div>
             <div><span>การศึกษา</span><b>มหาวิทยาลัยกรุงเทพ วิทยาเขตรังสิต</b></div>
             <div><span>หลักสูตร</span><b>เทคโนโลยีสารสนเทศและนวัตกรรม — Computer Science</b></div>
-            <div><span>ผลการเรียน</span><b>กำลังขึ้นชั้นปีที่ 4 · GPA ปัจจุบัน 3.53</b></div>
+            <div><span>ผลการเรียน</span><b>กำลังขึ้นชั้นปีที่ 4 · GPA ปัจจุบัน 3.49</b></div>
             <div><span>ความสนใจ</span><b>Web Development · Game Development · AI</b></div>
+          </div>
+          <div className="about-contact" id="contact">
+            <h3>ช่องทางติดต่อ</h3>
+            <a href="mailto:kittikorn.dev@gmail.com">kittikorn.dev@gmail.com <Arrow /></a>
+            <a href="tel:+66808212143">0808212143 <Arrow /></a>
+            <a href="https://github.com/Lostinyss" target="_blank" rel="noreferrer">github.com/Lostinyss <Arrow /></a>
           </div>
         </div>
       </section>
@@ -171,20 +164,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact section" id="contact">
-        <span className="eyebrow">ติดต่อ</span>
-        <h2>สนใจร่วมงาน<br />หรือพูดคุยเกี่ยวกับโปรเจกต์</h2>
-        <div className="contact-actions">
-          <a className="button button-light" href="mailto:Imator92@gmail.com">ส่ง Email <Arrow /></a>
-          <a className="button button-outline" href="https://github.com/Lostinyss" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
-        </div>
-      </section>
-
-      <footer>
-        <div><a className="logo footer-logo" href="#top">KM<span>.</span></a><p>นักศึกษา Computer Science<br />จากปากช่อง ประเทศไทย</p></div>
-        <div className="footer-links"><span>ช่องทางติดต่อ</span><a href="mailto:Imator92@gmail.com">Imator92@gmail.com <Arrow /></a><a href="https://github.com/Lostinyss" target="_blank" rel="noreferrer">github.com/Lostinyss <Arrow /></a></div>
-        <p className="copyright">© 2026 Kittikorn Manimon</p>
-      </footer>
     </main>
   );
 }

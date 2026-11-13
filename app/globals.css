@@ -244,3 +244,16 @@ footer { padding:65px 8vw 30px; gap:40px; }
   .skill-grid article:nth-child(2) { border-color:var(--line); }
   .skill-grid h3 { margin-top:35px; }
 }
+.footer-intro { margin:0; color:#aab4bf; line-height:1.6; }
+@media (max-width:960px) {
+  .nav-links { display:flex; overflow-x:auto; min-width:0; white-space:nowrap; }
+}
+@media (max-width:680px) {
+  .nav { gap:16px; }
+  .nav-links { gap:16px; }
+  .mini-cta { flex:none; }
+}
+.about-contact { display:grid; gap:12px; margin-top:38px; scroll-margin-top:24px; }
+.about-contact h3 { margin:0 0 4px; color:var(--ink); font-size:18px; font-weight:600; }
+.about-contact a { width:fit-content; color:var(--accent); font-size:16px; line-height:1.5; overflow-wrap:anywhere; }
+.about-contact a:hover { text-decoration:underline; text-underline-offset:4px; }

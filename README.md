@@ -38,5 +38,6 @@ npm test
 
 ## Contact
 
-- Email: [Imator92@gmail.com](mailto:Imator92@gmail.com)
+- Email: [kittikorn.dev@gmail.com](mailto:kittikorn.dev@gmail.com)
+- Phone: [0808212143](tel:+66808212143)
 - GitHub: [Lostinyss](https://github.com/Lostinyss)
